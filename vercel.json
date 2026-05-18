@@ -1,0 +1,5 @@
+{
+  "installCommand": "corepack pnpm install --ignore-scripts",
+  "buildCommand": "corepack pnpm --filter @workspace/todayler run build",
+  "outputDirectory": "artifacts/todayler/dist/public"
+}
