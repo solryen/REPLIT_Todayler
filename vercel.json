@@ -1,0 +1,5 @@
+{
+  "installCommand": "corepack pnpm install --ignore-scripts",
+  "buildCommand": "if [ -d artifacts/todayler ]; then corepack pnpm --dir artifacts/todayler run build && rm -rf public && mkdir -p public && cp -R artifacts/todayler/dist/public/. public; else corepack pnpm run build && rm -rf public && mkdir -p public && cp -R dist/public/. public; fi",
+  "outputDirectory": "public"
+}
